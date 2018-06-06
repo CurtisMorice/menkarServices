@@ -7,12 +7,15 @@
     <title>Services Intro</title>
     <script src="vendors/angular.min.js"></script>
     <script src="scripts/controllers/people.controller.js"></script>
+    <script src="scripts/services/ppl.service.js"></script>
 </head>
 <body>
     <h1>Services Intro</h1>
     <div ng-app="myApp">
         <div ng-controller="PeopleController as PC">
             <h2>People Controller</h2>
+            <button ng-click="PC.getPpl()">Get 'em</button>
+            <p>{{ PC.thingy }}</p>
         </div>
     </div>
 </body>
